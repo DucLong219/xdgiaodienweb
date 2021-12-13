@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #header{
+           
+            height:200px;
+
+        }
+        p{
+            margin-left:20px;
+        }
+        .h-top{
+            background-color:red;
+            color:white;
+            display:flex;
+            padding:10px;
+            width:100%;
+            height:50px;
+            
+        }
+        .space{
+            margin-left:20%;
+        }
+        .h-bottom{
+            display:flex;
+            padding:10px;
+            width:100%;
+            height:150px;
+        }
+        .timkiem{
+            margin-left:50px;
+            width:40%;
+            height:50px;
+            margin-top:50px;
+        }
+        .sdt{
+            margin-left:20px;
+            color:black;
+            margin-top:50px;
+        }
+        .sdt:hover{
+            color:red;
+        }
+       .giohang{
+           height:50px;
+           margin-top:50px;
+           width:50px;
+           margin-left:30px;
+       }
+       #menu{
+           margin-top:30px;
+           width:20%;
+           background-color:#CCCCCC;
+           color:black;
+       }
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            color: black;
+        }
+       li{
+           list-style-type:none;
+           padding:10px;
+           display:block;
+           position:relative;
+       }
+       .menuc2{
+           display:none;
+          background-color:white;
+          color:black;
+           position:absolute;
+           left:100%;
+           z-index:10;
+           top:0px;
+           width:200px;
+       }
+        #menu ul li a:hover{
+            color:#FFFF00;
+        }
+        #menu ul li:hover .menuc2 {
+            display: block;
+        }
+        #content{
+            width:80%;
+            background-color:white;
+        }
+        .tieude{
+            background-color:yellow;
+            color:white;
+            width:200px;
+            height:50px;
+            text-align:left;
+            justify-content:center;
+            padding:10px;
+        }
+        span{
+            color:red;
+            padding:10px;
+        }
+        .giamgia{
+            background-color:red;
+            color:white;
+            margin:20px;
+        }
+        del{
+            padding:10px;
+            margin-top:10px;
+        }
+       #content_1 p{
+           color:black;
+       }
+        #content_1 p:hover{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="h-top">
+            <p>Địa chỉ số 928 Đường Láng - Đống Đa - Hà Nội</p>
+            <p class="space"> Mua hàng từ xa</p>
+            <p>Tin tức khuyến mại</p>
+            <p>Bản đồ</p>
+            <p>Giới thiệu</p>
+            <p>Chính sách bảo hành</p>
+        </div>
+        <div class="h-bottom">
+            <img src="Đề 4\anh1.png" />
+            <input class="timkiem" type="search" placeholder="Nhập sản phẩm bạn muốn tìm ..." />
+            <div class="sdt">
+                <i>Gọi cho chúng tôi</i>
+                <p><b>0989291988</b></p>
+            </div>
+            <button class="giohang">Giỏ hàng</button>
+        </div>
+    </div>
+    <div id="nav" style="display:flex">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="#">Galaxy Note</a>
+                    <ul class="menuc2">
+                        <li><a href="#">Galaxy Note 10+</a></li>
+                        <li><a href="#">Note 8 N950</a></li>
+                        <li><a href="#">Note 4 N910</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galaxy S-series</a></li>
+                <li><a href="#">Galaxy A.E,J series</a></li>
+                <li><a href="#">Galaxy Model 2018</a></li>
+                <li><a href="#">Galaxy Model 2017</a></li>
+                <li><a href="#">Galaxy Model 2016</a></li>
+                <li><a href="#">Samsung smart watch</a></li>
+                <li><a href="#">Galaxy Tab</a></li>
+            </ul>
+        </div>
+        <div id="content"  >
+            <div id="content_1" style="margin-top:30px; display:flex">
+                <h3 class="tieude">GALAXY NOTE</h3>
+                <p class="t-content">Galaxy note 10+</p>
+                <p class="t-content">Galaxy note 10+</p>
+                <p class="t-content">Galaxy note 10+</p>
+                <p class="t-content">Galaxy note 10+</p>
+                <p class="t-content">Galaxy note 10+</p>
+                <p class="t-content">Galaxy note 10+</p>
+            </div>
+            <div id="content_2"style="margin-top:0px; display:flex">
+
+                <img style="width:20%;" class="anh_2" src="Đề 4\anh2.png" />
+                <div style="width:20%;">
+                    <img style="width:100%; height:300px;" src="Đề 4\anh3.png" />
+                    <p><span>1,990,000</span><ins>đ</ins><span class="giamgia">-50%</span></p>
+                    <p><del>3,990,000</del><ins>đ</ins></p>
+                </div>
+                <div style="width:20%;">
+                    <img style="width: 100%; height: 300px;" src="Đề 4\anh4.png" />
+                    <p><span>1,450,000</span><ins>đ</ins><span class="giamgia">-40%</span></p>
+                    <p><del>3,990,000</del><ins>đ</ins></p>
+                </div>
+                <div style="width:20%;">
+                    <img style="width: 100%; height: 300px;" src="Đề 4\anh5.png" />
+                    <p><span>299,000</span><ins>đ</ins><span class="giamgia">-40%</span></p>
+                    <p><del>3,990,000</del><ins>đ</ins></p>
+                </div>
+                <div style="width:20%;">
+                    <img style="width: 100%; height: 300px;" src="Đề 4\anh6.png" />
+                    <p><span>990,000</span><ins>đ</ins><span class="giamgia">-34%</span></p>
+                    <p><del>3,990,000</del><ins>đ</ins></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        header{
+            background-color:white;
+            
+        }
+        #top {
+            display: flex;
+            width:100%;
+        }
+        header .top_left{
+            text-align:left;
+            width:10%;
+            height:100px;
+        }
+        header .none{
+            width:50%;
+        }
+        header .top_right {
+            text-align: right;
+            margin-right: 10px;
+            margin-top: 50px;
+            width: 40%;
+        }
+            header .top_right #search {
+                width: 90%;
+                height: 50px;
+                margin-right: 50px;
+            }
+        header .top_right .menu1 ul{
+            list-style-type:none;
+            display:flex;
+            
+            
+        }
+         header .top_right .menu1 ul li a {
+                text-decoration: none;
+                display: block;
+                padding: 34px;
+                text-align:right;
+          }
+            header .top_right .menu1 ul li a:hover {
+                color:#00CC33;
+            }
+        menu form{
+            width:100%;
+            display:flex;
+        }
+        #menu_left{
+            width:20%;
+        }
+        menu #menu_left #title {
+            padding:20px;
+            background-color: #FF3366;
+            }
+            menu #menu_left #title h5 {
+                color: white;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+        menu #menu_left .menu2 {
+            display: flex;
+            flex-direction: column;
+            display:block;
+        }
+            menu #menu_left .menu2 ul li {
+                border: solid 0.1px;
+                text-align: center;
+                position: relative;
+            }
+            menu #menu_left .menu2 ul li a {
+                text-decoration: none;
+                font-weight: bold;
+                padding: 5px;
+                display:block;
+                
+
+            }
+        menu #menu_left .menu2 ul li a:hover {
+                color: green;
+                display:block;
+               
+            }
+        menu #menu_left .menu2 ul li .women{
+             display:none;
+             position:absolute;
+             list-style-type:none;
+             width:200px;
+             background-color:white;
+            }
+        menu #menu_left .menu2 ul li:hover .women{
+            display:block;
+            z-index:10;
+            top: 0px;
+           left:100%;
+        }
+        button{
+            padding:10px;
+        }
+        .datmua{
+            width:300px;
+            background-color:black;
+            color:white;
+        }
+        .datmua:hover{
+            background-color:red;
+        }
+        .yeuthich{
+            width:300px;
+            border:solid 1px black;
+            background-color:white;
+            color:black;
+
+        }
+        .yeuthich:hover{
+            background-color:green;
+            color:white;
+        }
+        #menu_mid{
+            width:50%;
+        }
+        #menu_mid img{
+            text-align:center;
+            object-fit:contain;
+            padding-left:100px;
+            width:50%;
+        }
+         #menu_mid img:hover{
+              transform: scale(1.5);
+         }
+        #menu_right{
+            width:30%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <img class="top_left" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAADl5eXw8PDW1ta6urphYWExMTE5OTm3t7fe3t6SkpJISEhmZmaMjIxLS0uqqqr4+PjNzc1CQkIbGxspKSmwsLCjo6Oenp7AwMDOzs5ZWVlzc3OXl5dRUVF6enqCgoIaGho2NjYPDw8iIiKIdW2ZAAAEhElEQVR4nO3abYOiKgCGYe1lerGc1MqsLKf6/79xWwEFhGnPzKn8cF+fRkXhSRRkNwgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACeYpDOtrN08L9caxO6iYo8B8NwKE+fGXuvm8WyWo38tY12y7rC9SFKvYW2h+aCWWRcbFjvXHZPGYTr9frqOHA3+V3CsfPoce6qahibpc6uUkllXywatlfwJ/zr43UJ7xm7TT93Sx2GdqnUdbFKFetTwnCdmPUU7mK7fyoV9jFhuDGq6fQ95aCXGnoKlb9PWIxs2onZvHO0ef5FwkUVR1G52+2i+HxSzYq1WpZNYyfVtkjHZVMqvDiKXattuh/HU1VG9YdfJPS8l8WJn+6DWsLI2Le12hUEzSNYNRUlO7Vv2hRL5J5ts0O8Viu1/b6EsblTdrZcbavImfliOcrdzVtJPoXGs5lsT80j0Z+E8o2YGe3SboWikquhcWffe6Hd7k/CQDxBcuPgCdi8p65yU46X/tp6lFDcDTGiz0W7T67TY+PBi8TW3ltbjxIWWu87uvueICaNcmRZhfqWQ48SigdxXP8tml12TtUKmnc7XPtmtj1KKO5h0f7puYVBcKuPytfuWkYMD+6Mz0rofIIkT8Ky3l03Uzxqh+6peknZaG3Sdssdv8mzEl4/F6ZJW7kn4aS9bwf9JnXt68MTuXUMNYeZHVIkXIxntvxhQttcT9j1KKG4F4v6b/Eu8X4NynmM2rTmrx+FI6HX6xLK08QYIP72fxWbCYPU/iTXZzjvS+iel+oJnJ/EroT3jEuzsmt77vsSnsqy3OX5Ks/L6kMVkh1MvCy9o7jVS4XZwaiu6QDPSrgpI1NsJ3RRPVc0dtutWRBj4K0TPNcbZn49/Shhan0CJnrCx6OFQ6VKiNGiu6ohrbxtG7TLOupskTAbzDseJvSMxz9P2N4zOcb5LvBZH925D66smyhHC0fJhwk7K0LCTxMetesldmRHDd5Xrfomls90fxIaDT59dxPFU3p1Hwya9Vh5j9+XMBdfqUkyiLpxZDetXKebX/WDbjPkuyXWt96RcNXuEBGNF4scw8e+6zc/yLHbW2U3lQNuLxIGX/UeffwbyRyFfbIKmLftj6wi8txVW+L9CffdfqqW2iLXue1iW13sZs5g5UMs720/EspFz7O+Sy18brTmz5slUzkUqPfmtP2kGKoJktp+UsJp0flamake50goW6r30+Sm0qyj/b2uZJRnak/z5aZNERfxfQYYLZtJuBoun5XQRa0UOhIGufG7i4gX75XaT9PIV6RZuHllQtVzXQnlZNvop4HjX57++tRnU6Oru5C1ItyDhPIFaL760y/HZeyZTvn9j/DKhGp1yplQvmzsmcrM+o75cixtJHZXzfQxRs68/1vC02U6nd58CW9Tt4taDSouWZZdZp2r1jWe7d3zctG0PPLNRdNzu+SWmwtIw8m9tsz1j9nfJHy5wShNRw/+D0IyT4t05PnZAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBX/gCf0jgyA9fKFQAAAABJRU5ErkJggg==" />
+           <div class="none"></div>
+           <div class="top_right">
+               <input type="search" id="search" placeholder="Tìm kiếm" />
+               <div class="menu1">
+                   <ul>
+                       <li><a href="#">Giỏ hàng</a></li>
+                       <li><a href="#">Thông báo</a></li>
+                       <li><a href="#">Đăng nhập</a></li>
+                       <li><a href="#">Đăng ký</a></li>
+                   </ul>
+               </div>
+           </div>
+        </div>
+    </header>
+    <menu>
+        <form>
+            <div id="menu_left">
+                <div id="title">
+                    <h5>ALL CATEGORIES</h5>
+                </div>
+                <div class="menu2">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">WOMEN</a>
+                            <ul class="women">
+                                <li><a href="#">clothing</a></li>
+                                <li><a href="#">Western Wear</a></li>
+                                <li><a href="#">Night Wear</a></li>
+                                <li><a href="#">Ethnic Wear</a></li>
+                                <li><a href="#">Designer Wear</a></li>
+                            </ul></li>
+                        <li> <a href="#">MEN</a>
+                             <ul class="women">
+                                 <li><a href="#">clothing</a></li>
+                                 <li><a href="#">Western Wear</a></li>
+                                 <li><a href="#">Night Wear</a></li>
+                                 <li><a href="#">Ethnic Wear</a></li>
+                                 <li><a href="#">Designer Wear</a></li>
+                             </ul></li>
+                        <li><a href="#">FURNITURE</a>
+                            <ul class="women">
+                                <li><a href="#">clothing</a></li>
+                                <li><a href="#">Western Wear</a></li>
+                                <li><a href="#">Night Wear</a></li>
+                                <li><a href="#">Ethnic Wear</a></li>
+                                <li><a href="#">Designer Wear</a></li>
+                            </ul></li>
+                        <li><a href="#">ELECTRONICS</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div id="menu_mid">
+                <img style="transition:1s" src="https://1.bp.blogspot.com/-cAzig95q1Vw/YMgs_FHQ4SI/AAAAAAAA_KM/6g3-2-B6DXcCQcWelpb43Bblp3hGRiu1wCLcBGAsYHQ/s0/gai-xinh-vay-ngan-Taihinhanh-Vn%2B%25282%2529.jpg"  />
+            </div>
+            <div id="menu_right">
+                <b>AM YOUNG</b>
+                <h4><b>AM YOUNG SƠ MI TAY LƯỚI XANH CỔ VỊT</b></h4>
+                <del style="color:red"><p style="color:black">500.000 VND</p></del>
+                <p style="color:red">375.000 VND | Giảm 25%</p>
+                <hr />
+                <p>CHỌN KÍCH THƯỚC</p>
+                <button type="button" name="size" value="S">S</button>
+                <button type="button" name="size" value="M">M</button>
+                <button type="button" name="size" value="L">L</button>
+                <p style="text-align:right"><ins>Thông tin người mẫu <br /> Size Guide</ins></p>
+                <hr />
+                <button class="datmua" name="datmua" value="datmua">ĐẶT MUA</button><br /><br />
+                <button class="yeuthich" name="yeuthich" value="yeuthich">Thêm vào yêu thích</button>
+            </div>
+        </form>
+        
+    </menu>
+</body>
+</html>

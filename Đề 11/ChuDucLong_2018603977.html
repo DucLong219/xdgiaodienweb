@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        a,h1{
+            text-decoration:none;
+            display:block;
+            font-family:Arial;
+            padding:10px;
+            justify-content:center;
+        }
+        li{
+            display:block;
+            list-style-type:none;
+            position:relative;
+            padding:20px;
+        }
+        #Menu {
+            background: #66FFCC;
+        }
+        .search {
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+            font-family: Arial;
+        }
+        .menuSP {
+            background: #66FFCC;
+            position: absolute;
+            display: block;
+            display: none;
+            top:100%;
+            left:0;
+            width:200px;
+        }
+        .menubn li:hover{
+            background-color:#FFCCCC;
+        }
+        .menubn li:hover .menuSP {
+            display: block;
+            
+        }
+        #Banner {
+            background-image: url("son7mau.png");
+            height:80px;
+            width:100%;
+        }
+        #Content{
+            font-size:16px;
+            color:#330066;
+            background-color:#66FF66;
+        }
+        label {
+            font-size: 16px;
+            color: #330066;
+            margin-left:20px;
+        }
+        .chon1 {
+            width: 200px;
+            margin-left: 20px;
+        }
+        .chon2 {
+            width: 50px;
+            margin-left: 20px;
+        }
+        option{
+            padding-left:10px;
+        }
+        .line1, .line2 {
+            width: 100%;
+        }
+        .line1 div ,.line2 div{
+            margin:30px;
+            width:25%;
+        }
+            .line1 div img, .line2 div img{
+                height:90%;
+                width:100%;
+            }
+            .line1 div p, .line2 div p {
+                margin-left: 30%;
+                font-size: 16px;
+                color: #330066;
+            }
+        button {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Banner" style="display:flex">
+        <h1><b style="color:blue;">Sơn 7 màu</b></h1>
+        <h1 style="margin-left:500px; color:red">Nhà cung cấp sơn chuyên nghiệp</h1>
+    </div>
+    <div id="Menu" style="display:flex">
+        <ul class="menubn" style=" display:flex">
+            <li><a href="#">SƠN DULUX</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li>
+                <a href="#">SẢN PHẨM</a>
+                <ul class="menuSP">
+                    <li><a href="#">Sơn DUlux</a></li>
+                    <li><a href="#">Sơn Maxilite</a></li>
+                    <li><a href="#">Sơn Jotun</a></li>
+                    <li><a href="#">Sơn Epoxy</a></li>
+                    <li><a href="#">Chống thấm</a></li>
+                    <li><a href="#">Dịch vụ diệt mối</a></li>
+                    <li><a href="#">Sơn và Chống thấm Bk</a></li>
+                    <li><a href="#">Sơn kết cấu thép</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sơn EPOXY</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+        <input type="search" class="search" style="padding: 20px;margin-left:150px" placeholder="Tìm kiếm ..." />
+    </div>
+    <div id="Content">
+        <div class="content">
+            <p style="font-size:16px;color:#330066;padding:20px;font-weight:bold">CHỐNG THẤM</p>
+            <div style="display:flex;margin-top:10px;">
+                <div style="display:flex">
+                    <label>Sắp xếp theo</label>
+                    <select class="chon1">
+                        <option>mặc định</option>
+                        <option>theo thứ tự</option>
+                    </select>
+                </div>
+                <div style="display:flex">
+                    <label style="font-size: 16px;">Hiển thị </label>
+                    <select class="chon2">
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                    <label>mỗi trang</label>
+                </div>
+                <div style="display:flex;margin-left:500px;">
+                    <label>xem</label>
+                    <button style="background-color:blue">menu</button>
+                    <button>LIST</button>
+                </div>
+            </div>
+        </div>
+        <div class="line1" style="display:flex">
+            <div>
+                <img src="anh1.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            <div>
+                <img src="anh2.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            <div>
+                <img src="anh3.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            <div>
+                <img src="anh4.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            
+            
+            
+        </div>
+        <div class="line2" style="display:flex">
+            <div>
+                <img src="anh5.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            <div>
+                <img src="anh6.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            <div>
+                <img src="anh7.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            <div>
+                <img src="anh8.png" />
+                <p><a href="">Vui lòng gọi</a></p>
+            </div>
+            
+            
+            
+         
+        </div>
+    </div>
+</body>
+</html>

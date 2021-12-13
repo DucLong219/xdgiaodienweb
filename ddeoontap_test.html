@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #Banner{
+            height:70px;
+            display:flex;
+            padding:30px;
+            background-color:pink;
+        }
+        .top_banner{
+            margin-left:50px;
+        }
+        .top_banner > h4 {
+            color:red;
+        }
+        h1,h3,h4{
+            font-family:Arial;
+        }
+        #Menu{
+            height:30px;
+            background-color:#045199;
+            color:white;
+        }
+        .list{
+            display:flex;
+        }
+        #content{
+            height:230px;
+        }
+        #footer{
+            height:120px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+        }
+        li {
+            list-style-type: none;
+            padding-left: 40px;
+            margin-left: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family:Arial;
+            padding-top:5px;
+            padding-right:40px;
+        }
+        li:hover,a:hover{
+            color:blue;
+            background-color:white;
+        }
+        #slide img{
+            width:100%;
+            height:300px;
+        }
+        .CNTT,.CODIEN,.TBYT{
+            width:33%;
+            margin-left:80px;
+           
+        }
+        .anh{
+            width:80%;
+            height:40%;
+        }
+        .vanban{
+            width:80%;
+            text-align:justify;
+            color:black;
+        }
+        h2{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="Banner">
+        <h1 style="color:blue;">HSC</h1>
+        <div class="top_banner">
+            <h3 style="color:gray;">CÔNG TY TNHH CÔNG NGHỆ HSC</h3>
+            <h4>Tel: 04 668 39 668 - Fax: 04 668 06 132</h4>
+        </div>
+        <img style="height:70px; margin-left:500px;" src="fb.png" />
+    </div>
+    <div id="Menu">
+        <ul class="list">
+            <li><a href="content.html">Trang chủ</a></li>
+            <li>Giới thiệu</li>
+            <li>Quan hệ cổ đông</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li><input type="search" placeholder="Từ khóa tìm kiếm ..." /></li>
+        </ul>
+    </div>
+    <div id="slide">
+        <img src="slide.png" />
+    </div>
+    <div id="content" style="display:flex;width:100%;">
+        <div class="CNTT">
+            <h2>CÔNG NGHỆ THÔNG TIN</h2>
+            <img class="anh" src="slide.png" />
+            <p class="vanban">
+                ASUS VivoBook E210KA GJ031T là mẫu laptop nhỏ gọn bậc nhất trên thị trường hiện nay với màn hình chỉ 11,6 inch, tuy nhiên máy vẫn mang đến hiệu năng đủ để đáp ứng tốt các ứng dụng văn phòng và nhu cầu giải trí cơ bản. Đặc biệt, mức giá máy rất rẻ, phù hợp với các bạn học sinh, sinh viên.
+            </p>
+            <input type="button" value="Chi tiết" />
+        </div>
+        <hr />
+        <div class="TBYT">
+            <h2>THIẾT BỊ Y TẾ</h2>
+            <img class="anh" src="slide.png" />
+            <p class="vanban">
+                ASUS VivoBook E210KA GJ031T là mẫu laptop nhỏ gọn bậc nhất trên thị trường hiện nay với màn hình chỉ 11,6 inch, tuy nhiên máy vẫn mang đến hiệu năng đủ để đáp ứng tốt các ứng dụng văn phòng và nhu cầu giải trí cơ bản. Đặc biệt, mức giá máy rất rẻ, phù hợp với các bạn học sinh, sinh viên.
+            </p>
+            <button>Chi tiết</button>
+        </div>
+        <hr />
+        <div class="CODIEN">
+            <h2>CƠ ĐIỆN</h2>
+            <img class="anh" src="slide.png" />
+            <p class="vanban">
+                ASUS VivoBook E210KA GJ031T là mẫu laptop nhỏ gọn bậc nhất trên thị trường hiện nay với màn hình chỉ 11,6 inch, tuy nhiên máy vẫn mang đến hiệu năng đủ để đáp ứng tốt các ứng dụng văn phòng và nhu cầu giải trí cơ bản. Đặc biệt, mức giá máy rất rẻ, phù hợp với các bạn học sinh, sinh viên.
+            </p>
+            <button>Chi tiết</button>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <div>
+        <form action="#">
+            <table>
+                <tr>
+                    <td><b>Nhập n:</b></td>
+                    <td><input type="text" name="so" id="so"></td>
+                </tr>
+                <tr>
+                    <td>Tổng n số nguyên tố đầu tiên</td>
+                    <td><input type="text" name="kq" id="kq"></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="print()">Nhập</button></td>
+                    <td><button type="reset">Hủy bỏ</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script>
+    function isElement(n){
+        var flag = true;
+        if(n<2){
+            flag = false;
+        }
+        else{
+            for(var i=2;i<Math.sqrt(n);i++){
+                if(n%i==0){
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        return flag;
+    }
+    function print(){
+        var n = document.getElementById("so").value;
+        var temp = 0;
+        for(var i=0;i<n;i++){
+            if(isElement(i)== true){
+                temp+=i;
+            }
+        }
+        document.getElementById("kq").value = temp
+    }
+</script>
+</html>
